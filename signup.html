@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- load all Font Awesome v6 styles -->
+    <link href="fontawesome-free-6.5.2-web/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <link href="fontawesome-free-6.5.2-web/css/v4-shims.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center text-center">
+      <div class="login w-50 p-4 rounded-4">
+            <h2 class="mx-auto">Be One of Us</h2>
+            <div>
+                <div class="mb-3">
+                  <input type="email" placeholder="Your Name" class="form-control p-2 rounded-3" id="exampleInputName"  onkeypress="validateUserName(this)">
+                  <p class="lead text-danger d-none" id="incorrect"> Must start with Capital flor by latter Eg(Name)</p>
+                </div>
+                
+
+                <div class="mb-3">
+                  <input type="email" placeholder="Email address" class="form-control p-2 rounded-3" id="exampleInputEmail1" onkeypress="validateEmail(this)" aria-describedby="emailHelp" >
+                  <p class="lead text-danger d-none" id="incorrect"> please type a Valid Email</p>
+                </div>
+                
+
+
+                <div class="mb-3">
+                  <input type="password" placeholder="Password" class="form-control p-2 rounded-3" id="exampleInputPassword1" onkeypress="validatePassword(this)">
+                  <p class="lead text-danger d-none" id="incorrect">Must include atlest a Capital and two Numbers (Example12)</p>
+                
+                </div>
+                
+
+
+                <button type="submit" class="btn btn-outline-light w-100" id="signIn" >sign In</button>
+              </div>
+              <p class="lead mt-3">have an account? <a href="file:///D:/Rout/Week%2011/Assignment/index.html">Login</a> </p>
+        </div>
+        
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sign.js"></script>
+</body>
+</html>
