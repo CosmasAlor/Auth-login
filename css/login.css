@@ -3,7 +3,7 @@ a {
     text-decoration: none;
 }
 
-h2, p, input, .btn {
+h2, p, input, .btn, .navbar-brand {
 
     font-family: "Courgette", cursive !important;
     font-weight: 400;
