@@ -28,6 +28,9 @@ The application includes input validation using regular expressions to ensure th
    ```
 3. Open `index.html` in your preferred web browser.
 
+## Demo 
+Check out the live demo of Cosmas [here](https://cosmasalor.github.io/Cosmas/).
+
 ## Usage
  **Register a New User** 
 
