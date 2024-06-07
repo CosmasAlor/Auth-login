@@ -4,12 +4,11 @@ a {
 }
 
 h2, p, input, .btn, .navbar-brand {
-
-    font-family: "Courgette", cursive !important;
+    font-family: 'Courgette', cursive !important;
     font-weight: 400;
     font-style: normal;
-        
 }
+
 
 body {
     background-image: url(../images/base.jpg);
