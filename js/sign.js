@@ -8,35 +8,40 @@ document.getElementById("signIn").addEventListener("click", function() {
 });
 
 
-
 var logs = JSON.parse(localStorage.getItem('logs')) || [];
 
 function signIn() {
+
     var data = {
-        name : userName.value,
-        mail : emailInput.value,
+        name: userName.value,
+        mail: emailInput.value,
         password: passwordInput.value,
     };
+
+    if (!userName.value || !emailInput.value || !passwordInput.value) {
+        document.getElementById("error").innerText = "All fields are required.";
+        document.getElementById("error").classList.remove('d-none');
+        console.log("All fields are required");
+        return;
+    }
 
     var emailExists = logs.some(function(log) {
         return log.mail === emailInput.value;
     });
 
     if (emailExists) {
+        document.getElementById("error").innerText = "Email already exists.";
+        document.getElementById("error").classList.remove('d-none');
         console.log("Email already exists");
-    } else {
 
+    } else {
         logs.push(data);
 
         localStorage.setItem('logs', JSON.stringify(logs));
         console.log("Signed in successfully");
-        
         window.location.href = 'index.html';
-        
-        return; 
     }
 }
-
 
 function validateInput(element, regex) {
     if (regex.test(element.value)) {
