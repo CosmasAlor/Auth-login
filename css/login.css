@@ -2,6 +2,15 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+h2, p, input, .btn {
+
+    font-family: "Courgette", cursive !important;
+    font-weight: 400;
+    font-style: normal;
+        
+}
+
 body {
     background-image: url(../images/base.jpg);
     background-position: center center;
