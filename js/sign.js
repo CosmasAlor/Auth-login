@@ -18,8 +18,6 @@ function signIn() {
         password: passwordInput.value,
     };
 
-   
-    // Check if the email already exists in the logs array
     var emailExists = logs.some(function(log) {
         return log.mail === emailInput.value;
     });
@@ -27,15 +25,15 @@ function signIn() {
     if (emailExists) {
         console.log("Email already exists");
     } else {
-        // Add the new data to logs
+
         logs.push(data);
-        // Save the updated logs to localStorage
+
         localStorage.setItem('logs', JSON.stringify(logs));
         console.log("Signed in successfully");
         
         window.location.href = 'index.html';
         
-        return; // Exit the function after redirecting
+        return; 
     }
 }
 
