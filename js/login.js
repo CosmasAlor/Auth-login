@@ -10,7 +10,8 @@ function logIn() {
     var usersdata = JSON.parse(localStorage.getItem('logs')) || [];
 
     if (usersdata.length === 0) {
-        console.log("No users found. Please sign up.");
+        document.getElementById("incorrect").innerText = "No users found. Please sign up.";
+        document.getElementById("incorrect").classList.remove('d-none');
         return;
     }
 
